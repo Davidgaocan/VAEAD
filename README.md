@@ -85,7 +85,7 @@ We provide both theoretical and empirical analyses of computational cost. Theore
 
 We designed a concise toy example to visually explain the collaborative detection mechanism:
 
-![Toy Example for Collaborative Detection](./figs/fig3_toy_example.pdf)
+![Toy Example for Collaborative Detection](./figs/fig3_toy_example.png)
 
 - **Panel (a): Input Data.** Four normal clusters with anomalies in inter-cluster regions.
 - **Panel (b): Single AE.** A single AE learns a global manifold that covers inter-cluster regions, causing anomalies to receive low reconstruction errors and thus be missed.
@@ -101,7 +101,7 @@ This demonstrates that decomposing the data distribution into local regions via 
 
 We conducted extra experiments on three complex distributions to qualitatively support the quantitative results:
 
-![Anomaly Detection on Complex Distributions](./figs/fig8_complex_detection.pdf)
+![Anomaly Detection on Complex Distributions](./figs/fig8_complex_detection.png)
 
 - **(a) Four Clusters:** Anomalies placed in the center region between clusters. The collaborative AEs partition the space into four local regions, effectively identifying anomalies in inter-cluster gaps.
 - **(b) Two Moons:** Anomalies placed in the gap between moon-shaped clusters. Each AE specializes in one moon-shaped cluster, and the gap anomalies are detected through high reconstruction errors.
